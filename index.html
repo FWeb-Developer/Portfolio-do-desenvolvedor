@@ -31,7 +31,7 @@
             </div>  
         </header>
 
-        <div class="sidebar">
+        <aside class="sidebar">
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
@@ -46,7 +46,143 @@
                 <a href=""><i class="fab fa-github"></i></a>
                 <a href=""><i class="fab fa-linkedin"></i></a>
             </div> 
-        </div>
+        </aside>
+
+        <section class="sessao-conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam et amet ducimus magni totam ipsum nemo officiis, aspernatur quae ipsa voluptates nobis quo provident. Possimus rem sint numquam et commodi.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, officia unde dicta ipsa hic odio reprehenderit voluptatibus doloribus modi cum molestiae deleniti magnam sapiente nobis fuga, accusamus repellendus aut impedit!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum voluptates, dolorum incidunt debitis assumenda, omnis reprehenderit in molestiae totam porro commodi sunt quidem minus cupiditate? Ex incidunt neque vero.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, illum possimus. Laudantium soluta esse saepe amet illo sit ratione? Facilis earum laboriosam architecto nam deleniti maxime ex debitis repellendus nostrum!</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid rerum distinctio nemo doloribus necessitatibus, voluptas praesentium ex provident laudantium corrupti officiis sint excepturi alias qui commodi eius consectetur earum.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem, ab optio, doloremque quia enim at repudiandae aperiam consequuntur recusandae accusamus dolor fugit inventore dolorum eaque cumque. Amet, maxime similique!</p>
+                    </div>
+                </div>
+                <div class="conhecimento-img-wrapper">
+                    <img src="img/conhecimento.png" alt="imagem conhecimento">
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="card-img-wrapper">
+                            <img src="img/proj1.png" alt="imagem do projeto Currículo-Bootstrap">
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h2>Giovanna Serafim</h2>
+                        <h3>HTML, CSS, JS</h3>
+                        <p>Currículo-Web responsivo da Designer de sobrancelhas</p>
+                        <button class="btn">Saiba mais</button>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <section class="sessao-contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form>
+                    <label for="qtde">Qntde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="Layout"></label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="Layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
 
     </div>
 </body>
