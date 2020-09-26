@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --font-primary: "Baloo Da 2", serif ;
     --font-secundary: "Josefin Slab", serif ;
@@ -136,7 +140,7 @@ header {
     text-shadow: .3rem .2rem rgba(0, 0, 0, .4);
     margin-bottom: 2rem;
     opacity: 0;
-    animation: moveBanner 1s 0.7 forwards;
+    animation: moveBanner 1.5s 0.7 forwards;
 }
 
 .banner button {
@@ -151,7 +155,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     opacity: 0;
-    animation: moveBanner 1s 0.9 forwards;
+    animation: moveBanner 2s 0.9 forwards;
 }
 
 @keyframes moveBanner {
@@ -173,6 +177,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 1;
 }
 
 .show-menu .sidebar {
@@ -321,9 +326,14 @@ header {
     justify-content: center;
 }
 
+.sessao-projetos{
+    margin-bottom: 1rem;
+    height: 100vh;
+}
+
 .card {
-    width: 16rem;
-    height: 25rem;
+    width: 20rem;
+    height: 29rem;
     position: relative;
 }
 
@@ -580,4 +590,51 @@ header {
     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
     cursor: pointer;
     grid-column: 2;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family:  var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.5rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF); 
+    background: linear-gradient(to left, #E100FF, #7F00FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000000;
 }
