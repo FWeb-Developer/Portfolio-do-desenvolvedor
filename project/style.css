@@ -638,3 +638,43 @@ footer {
     border-radius: .3rem;
     box-shadow: 0 0.1rem 0.6rem #000000;
 }
+
+/* section conhecimentos */
+
+@media (max-width:1000px) {
+
+    div.sessao-header {
+        margin-top: 1rem
+    }
+
+    img#conhecimento {
+        display: none
+    }
+
+    div.conhecimentos{
+        display: block;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    div.conhecimento-header {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+}
+
+/* section projetos */
+
+@media(max-width: 1125px) {
+    div.sessao-header {
+        margin-top: 2.3rem;
+    }
+}
+
+/* section contato */
+
+@media(max-width: 850px) {
+    
+}
